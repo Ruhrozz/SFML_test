@@ -2,7 +2,9 @@
 ****************************************
 
 1. Create a window.
-2. Add few working buttons to press.  
+2. Add File, Edit, Help buttons.
+3. Make a brush.
+4. Make fullscreen button.
 
 ****************************************
 

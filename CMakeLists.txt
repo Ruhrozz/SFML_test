@@ -13,6 +13,6 @@ set(SFML_DIR "lib\\SFML-2.5.1\\lib\\cmake\\SFML")
 
 target_link_libraries(SFML_test sfml-graphics)
 
-find_package(SFML 2.5 COMPONENTS graphics audio REQUIRED)
+find_package(SFML 2.5 REQUIRED graphics audio network window)
 
 

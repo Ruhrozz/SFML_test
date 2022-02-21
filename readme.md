@@ -1,10 +1,10 @@
 #TODO:
 ****************************************
 
-1. Create a window.
-2. Add File, Edit, Help buttons.
-3. Make a brush.
-4. Make fullscreen button.
+* Add File, Edit, Help buttons.
+* Make a brush.
+* Make fullscreen button.
+* Add chain-bound connections for object groups
 
 ****************************************
 

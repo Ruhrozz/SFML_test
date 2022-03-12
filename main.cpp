@@ -2,6 +2,7 @@
 #include <SFML/Graphics.hpp>
 #include <iostream>
 #include <map>
+#include <vector>
 
 
 sf::RectangleShape *getButton(float width, float height, float x, float y) {
@@ -27,8 +28,13 @@ int main()
 {
     const float INIT_SCREEN[] = {800, 600};
     bool isFullscreen = false;
-
-
+    bool isDrawing = false;
+    
+    std::vector<sf::Vertex> buffer_vertex;
+    sf::Vertex line[100000];
+    int line_pos = 0;
+    
+    
     sf::RenderWindow window(sf::VideoMode(INIT_SCREEN[0], INIT_SCREEN[1]), "My window", sf::Style::None);
     window.setVerticalSyncEnabled(true);
 
@@ -59,7 +65,6 @@ int main()
         while (window.pollEvent(event))
             if (event.type == sf::Event::Closed)
                 window.close();
-
 
         if(sf::Mouse::isButtonPressed(sf::Mouse::Left))
         {
@@ -98,17 +103,37 @@ int main()
             }
         }
 
-
         window.clear(sf::Color(111, 111, 111));
-
-
+    
         for(auto& item : buttons)
             window.draw(*item.second);
-
+    
         for(auto& item : labels)
             window.draw(*item.second);
-
-
+        
+        bool prevIsDrawing = isDrawing;
+        
+        if(sf::Mouse::isButtonPressed(sf::Mouse::Left))
+        {
+            if(!isDrawing)
+            {
+                line[line_pos++].position = static_cast<sf::Vector2f>(sf::Mouse::getPosition(window));
+                isDrawing = true;
+            }
+    
+            line[line_pos++].position = static_cast<sf::Vector2f>(sf::Mouse::getPosition(window));
+            line[line_pos++].position = static_cast<sf::Vector2f>(sf::Mouse::getPosition(window));
+        }
+        else
+        {
+            isDrawing = false;
+        }
+        
+        if(prevIsDrawing and !isDrawing)
+            line[line_pos++].position = static_cast<sf::Vector2f>(sf::Mouse::getPosition(window));
+    
+        window.draw(line, line_pos, sf::Lines);
+        
         window.display();
     }
 

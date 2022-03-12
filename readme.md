@@ -1,10 +1,8 @@
 # TODO:
 ****************************************
 
-* Add File, Edit, Help buttons.
-* Make a brush.
-* Make fullscreen button.
-* Add chain-bound connections for object groups
+* Add Help button.
+* Add condition: draw iff cursour is in brush window
 
 ****************************************
 

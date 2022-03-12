@@ -1,4 +1,4 @@
-#TODO:
+# TODO:
 ****************************************
 
 * Add File, Edit, Help buttons.
@@ -8,13 +8,13 @@
 
 ****************************************
 
-##Warning!
+## Warning!
 
 Never use something like:
 
     using namespace std;
 
-##How to code?
+## How to code?
 
 1. Open official SFML link:
 >https://www.sfml-dev.org/

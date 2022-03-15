@@ -5,9 +5,9 @@
 #include <vector>
 
 
-sf::RectangleShape *getButton(float width, float height, float x, float y) {
+sf::RectangleShape *getButton(float width, float height, float x, float y, sf::Color color) {
     auto button = new sf::RectangleShape(sf::Vector2f(width, height));
-    button->setFillColor(sf::Color(140, 140, 140));   //158, 158, 158
+    button->setFillColor(color);   //158, 158, 158
     button->setPosition(sf::Vector2f(x, y));
     return button;
 }
@@ -26,28 +26,33 @@ sf::Text *getText(const sf::Font& font, const sf::String &str, float x, float y,
 
 int main()
 {
-    const float INIT_SCREEN[] = {800, 600};
+    const float INIT_RESOLUTION[] = {800, 600};
     bool isFullscreen = false;
     bool isDrawing = false;
     
     std::vector<sf::Vertex> buffer_vertex;
-    sf::Vertex line[100000];
-    int line_pos = 0;
+    
+    int lines_size = 100;
+    auto lines = new sf::Vertex[lines_size];
+    int lines_pos = 0;
     
     
-    sf::RenderWindow window(sf::VideoMode(INIT_SCREEN[0], INIT_SCREEN[1]), "My window", sf::Style::None);
+    sf::RenderWindow window(sf::VideoMode(INIT_RESOLUTION[0], INIT_RESOLUTION[1]), "My window", sf::Style::None);
     window.setVerticalSyncEnabled(true);
 
 
     std::map <std::string, sf::RectangleShape*> buttons;
     std::map <std::string, sf::Text*> labels;
 
+    buttons["border_top"] = getButton(5000, 40, 0, 0, sf::Color(70, 70, 70));
+    buttons["border_left"] = getButton(50, 5000, 0, 0, sf::Color(70, 70, 70));
+    buttons["border_right"] = getButton(5000, 5000, 350, 0, sf::Color(70, 70, 70));
+    buttons["border_bot"] = getButton(5000, 5000, 0, 340, sf::Color(70, 70, 70));
 
-    buttons["file"] = getButton(50, 30, 0, 0);
-    buttons["edit"] = getButton(50, 30, 52, 0);
-    buttons["brush"] = getButton(300, 300, 50, 40);
-    buttons["quit"] = getButton(30, 30, INIT_SCREEN[0] - 30 , 0);
-    buttons["resize"] = getButton(30, 30, INIT_SCREEN[0] - 62 , 0);
+    buttons["file"] = getButton(50, 30, 0, 0, sf::Color(140, 140, 140));
+    buttons["edit"] = getButton(50, 30, 52, 0, sf::Color(140, 140, 140));
+    buttons["quit"] = getButton(30, 30, INIT_RESOLUTION[0] - 30 , 0, sf::Color(140, 140, 140));
+    buttons["resize"] = getButton(30, 30, INIT_RESOLUTION[0] - 62 , 0, sf::Color(140, 140, 140));
 
 
     sf::Font font;
@@ -72,7 +77,11 @@ int main()
 
             if (buttons["file"]->getGlobalBounds().contains(mouse.x, mouse.y))
             {
-                std::cout << "AAAAAAAAAAAAAAAa" << std::endl;
+                buttons["file_opened"] = getButton(100, 200, 0, 32, sf::Color(140, 140, 140));
+            }
+            else
+            {
+                buttons.erase("file_opened");
             }
 
             if (buttons["quit"]->getGlobalBounds().contains(mouse.x, mouse.y))
@@ -89,14 +98,14 @@ int main()
                 if(!isFullscreen)
                 {
                     window.create(sf::VideoMode::getDesktopMode(), "My window", sf::Style::Fullscreen);
-                    buttons["quit"] = getButton(30, 30, sf::VideoMode::getDesktopMode().width - 30, 0);
-                    buttons["resize"] = getButton(30, 30, sf::VideoMode::getDesktopMode().width - 62 , 0);
+                    buttons["quit"] = getButton(30, 30, sf::VideoMode::getDesktopMode().width - 30, 0, sf::Color(140, 140, 140));
+                    buttons["resize"] = getButton(30, 30, sf::VideoMode::getDesktopMode().width - 62 , 0, sf::Color(140, 140, 140));
                 }
                 else
                 {
-                    window.create(sf::VideoMode(INIT_SCREEN[0], INIT_SCREEN[1]), "My window", sf::Style::None);
-                    buttons["quit"] = getButton(30, 30, INIT_SCREEN[0] - 30 , 0);
-                    buttons["resize"] = getButton(30, 30, INIT_SCREEN[0] - 62 , 0);
+                    window.create(sf::VideoMode(INIT_RESOLUTION[0], INIT_RESOLUTION[1]), "My window", sf::Style::None);
+                    buttons["quit"] = getButton(30, 30, INIT_RESOLUTION[0] - 30 , 0, sf::Color(140, 140, 140));
+                    buttons["resize"] = getButton(30, 30, INIT_RESOLUTION[0] - 62 , 0, sf::Color(140, 140, 140));
                 }
 
                 isFullscreen = !isFullscreen;
@@ -105,24 +114,34 @@ int main()
 
         window.clear(sf::Color(111, 111, 111));
     
-        for(auto& item : buttons)
-            window.draw(*item.second);
-    
-        for(auto& item : labels)
-            window.draw(*item.second);
+        
         
         bool prevIsDrawing = isDrawing;
+    
+        auto win_pos = sf::Mouse::getPosition(window);
+        float pos_x = win_pos.x;
+        float pos_y = win_pos.y;
         
-        if(sf::Mouse::isButtonPressed(sf::Mouse::Left))
+        if(sf::Mouse::isButtonPressed(sf::Mouse::Left) )
         {
+            if(lines_pos >= lines_size - 10)
+            {
+                lines_size *= 2;
+                auto *new_lines = new sf::Vertex[lines_size];
+                for(int i = 0; i < lines_pos; ++i)
+                    new_lines[i] = lines[i];
+                delete [] lines;
+                lines = new_lines;
+            }
+            
             if(!isDrawing)
             {
-                line[line_pos++].position = static_cast<sf::Vector2f>(sf::Mouse::getPosition(window));
+                lines[lines_pos++].position = sf::Vector2f(pos_x, pos_y);
                 isDrawing = true;
             }
     
-            line[line_pos++].position = static_cast<sf::Vector2f>(sf::Mouse::getPosition(window));
-            line[line_pos++].position = static_cast<sf::Vector2f>(sf::Mouse::getPosition(window));
+            lines[lines_pos++].position = sf::Vector2f(pos_x, pos_y);
+            lines[lines_pos++].position = sf::Vector2f(pos_x, pos_y);
         }
         else
         {
@@ -130,9 +149,15 @@ int main()
         }
         
         if(prevIsDrawing and !isDrawing)
-            line[line_pos++].position = static_cast<sf::Vector2f>(sf::Mouse::getPosition(window));
+            lines[lines_pos++].position = sf::Vector2f(pos_x, pos_y);
+        
+        window.draw(lines, lines_pos, sf::Lines);
     
-        window.draw(line, line_pos, sf::Lines);
+        for(auto& item : buttons)
+            window.draw(*item.second);
+    
+        for(auto& item : labels)
+            window.draw(*item.second);
         
         window.display();
     }

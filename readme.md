@@ -1,6 +1,7 @@
 # TODO:
 ****************************************
 
+* Fix: exit button triggers if hover the cursor over with the clamped mouse button
 * Add Help button.
 * Add condition: draw iff cursour is in brush window
 

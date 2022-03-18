@@ -44,23 +44,23 @@ int main()
     std::map <std::string, sf::RectangleShape*> buttons;
     std::map <std::string, sf::Text*> labels;
 
-    buttons["border_top"] = getButton(5000, 40, 0, 0, sf::Color(70, 70, 70));
-    buttons["border_left"] = getButton(50, 5000, 0, 0, sf::Color(70, 70, 70));
-    buttons["border_right"] = getButton(5000, 5000, 350, 0, sf::Color(70, 70, 70));
-    buttons["border_bot"] = getButton(5000, 5000, 0, 340, sf::Color(70, 70, 70));
+    buttons["l0_border_top"] = getButton(5000, 40, 0, 0, sf::Color(70, 70, 70));
+    buttons["l0_border_left"] = getButton(50, 5000, 0, 0, sf::Color(70, 70, 70));
+    buttons["l0_border_right"] = getButton(5000, 5000, 350, 0, sf::Color(70, 70, 70));
+    buttons["l0_border_bot"] = getButton(5000, 5000, 0, 340, sf::Color(70, 70, 70));
 
-    buttons["file"] = getButton(50, 30, 0, 0, sf::Color(140, 140, 140));
-    buttons["edit"] = getButton(50, 30, 52, 0, sf::Color(140, 140, 140));
-    buttons["quit"] = getButton(30, 30, INIT_RESOLUTION[0] - 30 , 0, sf::Color(140, 140, 140));
-    buttons["resize"] = getButton(30, 30, INIT_RESOLUTION[0] - 62 , 0, sf::Color(140, 140, 140));
+    buttons["l1_file"] = getButton(50, 30, 0, 0, sf::Color(140, 140, 140));
+    buttons["l1_edit"] = getButton(50, 30, 52, 0, sf::Color(140, 140, 140));
+    buttons["l1_quit"] = getButton(30, 30, INIT_RESOLUTION[0] - 30 , 0, sf::Color(140, 140, 140));
+    buttons["l1_resize"] = getButton(30, 30, INIT_RESOLUTION[0] - 62 , 0, sf::Color(140, 140, 140));
 
 
     sf::Font font;
     std::string path("..\\fonts\\ArialRegular.ttf");
     font.loadFromFile(path);
 
-    labels["file"] = getText(font, "File", 13, 7, 15);
-    labels["edit"] = getText(font, "Edit", 65, 7, 15);
+    labels["l1_file"] = getText(font, "File", 13, 7, 15);
+    labels["l1_edit"] = getText(font, "Edit", 65, 7, 15);
 
 
     while (window.isOpen())
@@ -75,21 +75,44 @@ int main()
         {
             sf::Vector2i mouse = sf::Mouse::getPosition(window);
 
-            if (buttons["file"]->getGlobalBounds().contains(mouse.x, mouse.y))
+            if (buttons["l1_file"]->getGlobalBounds().contains(mouse.x, mouse.y))
             {
-                buttons["file_opened"] = getButton(100, 200, 0, 32, sf::Color(140, 140, 140));
+                buttons["l2_file_isOpened"] = getButton(100, 200, 0, 32, sf::Color(140, 140, 140));
+    
+                buttons["l3_file_New"] = getButton(96, 20, 2, 34, sf::Color(90, 90, 90));
+                labels["l3_file_New"] = getText(font, "New", 6, 34, 15);
+                
+                buttons["l3_file_Save"] = getButton(96, 20, 2, 56, sf::Color(90, 90, 90));
+                labels["l3_file_Save"] = getText(font, "Save", 6, 56, 15);
+    
+                buttons["l3_file_Open"] = getButton(96, 20, 2, 78, sf::Color(90, 90, 90));
+                labels["l3_file_Open"] = getText(font, "Open", 6, 78, 15);
             }
             else
             {
-                buttons.erase("file_opened");
+                const auto found = buttons.find("l2_file_isOpened");
+                
+                if(found!=buttons.cend() and !buttons["l2_file_isOpened"]->getGlobalBounds().contains(mouse.x, mouse.y))
+                {
+                    buttons.erase("l2_file_isOpened");
+    
+                    buttons.erase("l3_file_New");
+                    labels.erase("l3_file_New");
+    
+                    buttons.erase("l3_file_Save");
+                    labels.erase("l3_file_Save");
+    
+                    buttons.erase("l3_file_Open");
+                    labels.erase("l3_file_Open");
+                }
             }
 
-            if (buttons["quit"]->getGlobalBounds().contains(mouse.x, mouse.y))
+            if (buttons["l1_quit"]->getGlobalBounds().contains(mouse.x, mouse.y))
             {
                 window.close();
             }
 
-            if (buttons["resize"]->getGlobalBounds().contains(mouse.x, mouse.y))
+            if (buttons["l1_resize"]->getGlobalBounds().contains(mouse.x, mouse.y))
             {
                 while(sf::Mouse::isButtonPressed(sf::Mouse::Left));
 
@@ -98,14 +121,14 @@ int main()
                 if(!isFullscreen)
                 {
                     window.create(sf::VideoMode::getDesktopMode(), "My window", sf::Style::Fullscreen);
-                    buttons["quit"] = getButton(30, 30, sf::VideoMode::getDesktopMode().width - 30, 0, sf::Color(140, 140, 140));
-                    buttons["resize"] = getButton(30, 30, sf::VideoMode::getDesktopMode().width - 62 , 0, sf::Color(140, 140, 140));
+                    buttons["l1_quit"] = getButton(30, 30, sf::VideoMode::getDesktopMode().width - 30, 0, sf::Color(140, 140, 140));
+                    buttons["l1_resize"] = getButton(30, 30, sf::VideoMode::getDesktopMode().width - 62 , 0, sf::Color(140, 140, 140));
                 }
                 else
                 {
                     window.create(sf::VideoMode(INIT_RESOLUTION[0], INIT_RESOLUTION[1]), "My window", sf::Style::None);
-                    buttons["quit"] = getButton(30, 30, INIT_RESOLUTION[0] - 30 , 0, sf::Color(140, 140, 140));
-                    buttons["resize"] = getButton(30, 30, INIT_RESOLUTION[0] - 62 , 0, sf::Color(140, 140, 140));
+                    buttons["l1_quit"] = getButton(30, 30, INIT_RESOLUTION[0] - 30 , 0, sf::Color(140, 140, 140));
+                    buttons["l1_resize"] = getButton(30, 30, INIT_RESOLUTION[0] - 62 , 0, sf::Color(140, 140, 140));
                 }
 
                 isFullscreen = !isFullscreen;

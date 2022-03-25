@@ -1,3 +1,0 @@
-C:/Users/Ruhrozz/Desktop/SFML_test/src/cmake-build-debug/CMakeFiles/SFML_test.dir
-C:/Users/Ruhrozz/Desktop/SFML_test/src/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/Ruhrozz/Desktop/SFML_test/src/cmake-build-debug/CMakeFiles/rebuild_cache.dir

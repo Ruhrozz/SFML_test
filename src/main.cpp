@@ -3,15 +3,7 @@
 #include <iostream>
 #include <map>
 #include <vector>
-
-
-sf::RectangleShape *getButton(float width, float height, float x, float y, sf::Color color) {
-    auto button = new sf::RectangleShape(sf::Vector2f(width, height));
-    button->setFillColor(color);   //158, 158, 158
-    button->setPosition(sf::Vector2f(x, y));
-    return button;
-}
-
+#include "..\\lib\\Buttons.h"
 
 sf::Text *getText(const sf::Font& font, const sf::String &str, float x, float y, unsigned int CharacterSize = 15)
 {
@@ -44,19 +36,19 @@ int main()
     std::map <std::string, sf::RectangleShape*> buttons;
     std::map <std::string, sf::Text*> labels;
 
-    buttons["l0_border_top"] = getButton(5000, 40, 0, 0, sf::Color(70, 70, 70));
-    buttons["l0_border_left"] = getButton(50, 5000, 0, 0, sf::Color(70, 70, 70));
-    buttons["l0_border_right"] = getButton(5000, 5000, 350, 0, sf::Color(70, 70, 70));
-    buttons["l0_border_bot"] = getButton(5000, 5000, 0, 340, sf::Color(70, 70, 70));
+    buttons["l0_border_top"] = Buttons::getButton(5000, 40, 0, 0, sf::Color(70, 70, 70));
+    buttons["l0_border_left"] = Buttons::getButton(50, 5000, 0, 0, sf::Color(70, 70, 70));
+    buttons["l0_border_right"] = Buttons::getButton(5000, 5000, 350, 0, sf::Color(70, 70, 70));
+    buttons["l0_border_bot"] = Buttons::getButton(5000, 5000, 0, 340, sf::Color(70, 70, 70));
 
-    buttons["l1_file"] = getButton(50, 30, 0, 0, sf::Color(140, 140, 140));
-    buttons["l1_edit"] = getButton(50, 30, 52, 0, sf::Color(140, 140, 140));
-    buttons["l1_quit"] = getButton(30, 30, INIT_RESOLUTION[0] - 30 , 0, sf::Color(140, 140, 140));
-    buttons["l1_resize"] = getButton(30, 30, INIT_RESOLUTION[0] - 62 , 0, sf::Color(140, 140, 140));
+    buttons["l1_file"] = Buttons::getButton(50, 30, 0, 0, sf::Color(140, 140, 140));
+    buttons["l1_edit"] = Buttons::getButton(50, 30, 52, 0, sf::Color(140, 140, 140));
+    buttons["l1_quit"] = Buttons::getButton(30, 30, INIT_RESOLUTION[0] - 30 , 0, sf::Color(140, 140, 140));
+    buttons["l1_resize"] = Buttons::getButton(30, 30, INIT_RESOLUTION[0] - 62 , 0, sf::Color(140, 140, 140));
 
 
     sf::Font font;
-    std::string path("..\\fonts\\ArialRegular.ttf");
+    std::string path(R"(..\src\fonts\ArialRegular.ttf)");
     font.loadFromFile(path);
 
     labels["l1_file"] = getText(font, "File", 13, 7, 15);
@@ -77,15 +69,15 @@ int main()
 
             if (buttons["l1_file"]->getGlobalBounds().contains(mouse.x, mouse.y))
             {
-                buttons["l2_file_isOpened"] = getButton(100, 200, 0, 32, sf::Color(140, 140, 140));
+                buttons["l2_file_isOpened"] = Buttons::getButton(100, 200, 0, 32, sf::Color(140, 140, 140));
     
-                buttons["l3_file_New"] = getButton(96, 20, 2, 34, sf::Color(90, 90, 90));
+                buttons["l3_file_New"] = Buttons::getButton(96, 20, 2, 34, sf::Color(90, 90, 90));
                 labels["l3_file_New"] = getText(font, "New", 6, 34, 15);
                 
-                buttons["l3_file_Save"] = getButton(96, 20, 2, 56, sf::Color(90, 90, 90));
+                buttons["l3_file_Save"] = Buttons::getButton(96, 20, 2, 56, sf::Color(90, 90, 90));
                 labels["l3_file_Save"] = getText(font, "Save", 6, 56, 15);
     
-                buttons["l3_file_Open"] = getButton(96, 20, 2, 78, sf::Color(90, 90, 90));
+                buttons["l3_file_Open"] = Buttons::getButton(96, 20, 2, 78, sf::Color(90, 90, 90));
                 labels["l3_file_Open"] = getText(font, "Open", 6, 78, 15);
             }
             else
@@ -121,14 +113,14 @@ int main()
                 if(!isFullscreen)
                 {
                     window.create(sf::VideoMode::getDesktopMode(), "My window", sf::Style::Fullscreen);
-                    buttons["l1_quit"] = getButton(30, 30, sf::VideoMode::getDesktopMode().width - 30, 0, sf::Color(140, 140, 140));
-                    buttons["l1_resize"] = getButton(30, 30, sf::VideoMode::getDesktopMode().width - 62 , 0, sf::Color(140, 140, 140));
+                    buttons["l1_quit"] = Buttons::getButton(30, 30, sf::VideoMode::getDesktopMode().width - 30, 0, sf::Color(140, 140, 140));
+                    buttons["l1_resize"] = Buttons::getButton(30, 30, sf::VideoMode::getDesktopMode().width - 62 , 0, sf::Color(140, 140, 140));
                 }
                 else
                 {
                     window.create(sf::VideoMode(INIT_RESOLUTION[0], INIT_RESOLUTION[1]), "My window", sf::Style::None);
-                    buttons["l1_quit"] = getButton(30, 30, INIT_RESOLUTION[0] - 30 , 0, sf::Color(140, 140, 140));
-                    buttons["l1_resize"] = getButton(30, 30, INIT_RESOLUTION[0] - 62 , 0, sf::Color(140, 140, 140));
+                    buttons["l1_quit"] = Buttons::getButton(30, 30, INIT_RESOLUTION[0] - 30 , 0, sf::Color(140, 140, 140));
+                    buttons["l1_resize"] = Buttons::getButton(30, 30, INIT_RESOLUTION[0] - 62 , 0, sf::Color(140, 140, 140));
                 }
 
                 isFullscreen = !isFullscreen;

@@ -4,6 +4,8 @@
 * Fix: exit button triggers if hover the cursor over with the clamped mouse button
 * Add Help button.
 * Add condition: draw iff cursour is in brush window
+* Add google-test for checking include by try-catch construction
+* Add drawing area resizing
 
 ****************************************
 

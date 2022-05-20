@@ -12,9 +12,9 @@ Like most successful projects, this project is made in a minimalist style and in
 Suitable for users who want to learn how to move the cursor on the screen and press buttons and show imagination in black and white pixel art.
 
 ## :green_book: How to install:
-1.
-2.
-3.
+1. Скачат
+2. Установит
+3. Рисоват
 4.
 
 ## :ledger: API:

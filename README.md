@@ -27,9 +27,7 @@ Suitable for users who want to learn how to move the cursor on the screen and pr
 2. Google tests 
 [documentation](https://google.github.io/googletest/)\
 [github](https://github.com/google/googletest)
-3. Docker
-[documentation]()
-4. ???
+3. ???
 
 ## Example of using:
 

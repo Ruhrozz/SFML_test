@@ -85,6 +85,51 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+.PHONY : list_install_components/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/snap/clion/190/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/snap/clion/190/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/snap/clion/190/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/snap/clion/190/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/snap/clion/190/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/snap/clion/190/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
+
 # The main all target
 all: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ruhrozz/Yandex.Disk/University/NSU_4_session/MPPSD/SFML_test/cmake-build-debug/CMakeFiles /home/ruhrozz/Yandex.Disk/University/NSU_4_session/MPPSD/SFML_test/cmake-build-debug//CMakeFiles/progress.marks
@@ -128,6 +173,71 @@ SFML_test: cmake_check_build_system
 SFML_test/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SFML_test.dir/build.make CMakeFiles/SFML_test.dir/build
 .PHONY : SFML_test/fast
+
+#=============================================================================
+# Target rules for targets named gmock
+
+# Build rule for target.
+gmock: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gmock
+.PHONY : gmock
+
+# fast build rule for target.
+gmock/fast:
+	$(MAKE) $(MAKESILENT) -f tests/libs/googletest-main/googlemock/CMakeFiles/gmock.dir/build.make tests/libs/googletest-main/googlemock/CMakeFiles/gmock.dir/build
+.PHONY : gmock/fast
+
+#=============================================================================
+# Target rules for targets named gmock_main
+
+# Build rule for target.
+gmock_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gmock_main
+.PHONY : gmock_main
+
+# fast build rule for target.
+gmock_main/fast:
+	$(MAKE) $(MAKESILENT) -f tests/libs/googletest-main/googlemock/CMakeFiles/gmock_main.dir/build.make tests/libs/googletest-main/googlemock/CMakeFiles/gmock_main.dir/build
+.PHONY : gmock_main/fast
+
+#=============================================================================
+# Target rules for targets named gtest
+
+# Build rule for target.
+gtest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gtest
+.PHONY : gtest
+
+# fast build rule for target.
+gtest/fast:
+	$(MAKE) $(MAKESILENT) -f tests/libs/googletest-main/googletest/CMakeFiles/gtest.dir/build.make tests/libs/googletest-main/googletest/CMakeFiles/gtest.dir/build
+.PHONY : gtest/fast
+
+#=============================================================================
+# Target rules for targets named gtest_main
+
+# Build rule for target.
+gtest_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gtest_main
+.PHONY : gtest_main
+
+# fast build rule for target.
+gtest_main/fast:
+	$(MAKE) $(MAKESILENT) -f tests/libs/googletest-main/googletest/CMakeFiles/gtest_main.dir/build.make tests/libs/googletest-main/googletest/CMakeFiles/gtest_main.dir/build
+.PHONY : gtest_main/fast
+
+#=============================================================================
+# Target rules for targets named run_basic_gtest
+
+# Build rule for target.
+run_basic_gtest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 run_basic_gtest
+.PHONY : run_basic_gtest
+
+# fast build rule for target.
+run_basic_gtest/fast:
+	$(MAKE) $(MAKESILENT) -f tests/tests/CMakeFiles/run_basic_gtest.dir/build.make tests/tests/CMakeFiles/run_basic_gtest.dir/build
+.PHONY : run_basic_gtest/fast
 
 lib/Buttons.o: lib/Buttons.cpp.o
 .PHONY : lib/Buttons.o
@@ -177,6 +287,54 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SFML_test.dir/build.make CMakeFiles/SFML_test.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+tests/tests/graphic_check.o: tests/tests/graphic_check.cpp.o
+.PHONY : tests/tests/graphic_check.o
+
+# target to build an object file
+tests/tests/graphic_check.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SFML_test.dir/build.make CMakeFiles/SFML_test.dir/tests/tests/graphic_check.cpp.o
+.PHONY : tests/tests/graphic_check.cpp.o
+
+tests/tests/graphic_check.i: tests/tests/graphic_check.cpp.i
+.PHONY : tests/tests/graphic_check.i
+
+# target to preprocess a source file
+tests/tests/graphic_check.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SFML_test.dir/build.make CMakeFiles/SFML_test.dir/tests/tests/graphic_check.cpp.i
+.PHONY : tests/tests/graphic_check.cpp.i
+
+tests/tests/graphic_check.s: tests/tests/graphic_check.cpp.s
+.PHONY : tests/tests/graphic_check.s
+
+# target to generate assembly for a file
+tests/tests/graphic_check.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SFML_test.dir/build.make CMakeFiles/SFML_test.dir/tests/tests/graphic_check.cpp.s
+.PHONY : tests/tests/graphic_check.cpp.s
+
+tests/tests/sfml_check.o: tests/tests/sfml_check.cpp.o
+.PHONY : tests/tests/sfml_check.o
+
+# target to build an object file
+tests/tests/sfml_check.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SFML_test.dir/build.make CMakeFiles/SFML_test.dir/tests/tests/sfml_check.cpp.o
+.PHONY : tests/tests/sfml_check.cpp.o
+
+tests/tests/sfml_check.i: tests/tests/sfml_check.cpp.i
+.PHONY : tests/tests/sfml_check.i
+
+# target to preprocess a source file
+tests/tests/sfml_check.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SFML_test.dir/build.make CMakeFiles/SFML_test.dir/tests/tests/sfml_check.cpp.i
+.PHONY : tests/tests/sfml_check.cpp.i
+
+tests/tests/sfml_check.s: tests/tests/sfml_check.cpp.s
+.PHONY : tests/tests/sfml_check.s
+
+# target to generate assembly for a file
+tests/tests/sfml_check.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SFML_test.dir/build.make CMakeFiles/SFML_test.dir/tests/tests/sfml_check.cpp.s
+.PHONY : tests/tests/sfml_check.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -184,14 +342,29 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... install"
+	@echo "... install/local"
+	@echo "... install/strip"
+	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... SFML_test"
+	@echo "... gmock"
+	@echo "... gmock_main"
+	@echo "... gtest"
+	@echo "... gtest_main"
+	@echo "... run_basic_gtest"
 	@echo "... lib/Buttons.o"
 	@echo "... lib/Buttons.i"
 	@echo "... lib/Buttons.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... tests/tests/graphic_check.o"
+	@echo "... tests/tests/graphic_check.i"
+	@echo "... tests/tests/graphic_check.s"
+	@echo "... tests/tests/sfml_check.o"
+	@echo "... tests/tests/sfml_check.i"
+	@echo "... tests/tests/sfml_check.s"
 .PHONY : help
 
 

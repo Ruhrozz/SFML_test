@@ -1,3 +1,15 @@
+# TODO :
+- [X] Задача 1
+    - [X] Подзадача 1 для Задачи 1
+    - [X] Подзадача 2 для Задачи 1
+- [ ] Задача 2
+    - [X] Подзадача 1 для Задачи 2
+    - [ ] Подзадача 2 для Задачи 2
+- [ ] Задача 3
+    - [ ] Подзадача 1 для Задачи 3
+        - [ ] Подзадача 1 для Подзадача 1 для Задачи 3
+
+
 # :books: Content:
 1. :blue_book:[About project](https://github.com/Ruhrozz/SFML_test#blue_book-about-project)
 2. :green_book:[How to install](https://github.com/Ruhrozz/SFML_test#green_book-how-to-install)

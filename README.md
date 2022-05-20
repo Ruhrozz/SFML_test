@@ -1,7 +1,9 @@
 ## About project:
 
 This project is a simplified drawing program without the ability to add any image to it or save a drawn picture... damn
+
 Like most successful projects, this project is made in a minimalist style and in a dark theme with a minimal set of features.
+
 Suitable for users who want to learn how to move the cursor on the screen and press buttons and show imagination in black and white pixel art
 
 ## API which we used:

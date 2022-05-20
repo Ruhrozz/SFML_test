@@ -23,9 +23,9 @@ Suitable for users who want to learn how to move the cursor on the screen and pr
 
 1. Simple and Fast Multimedia Library 2.5.1\
 [documentation](https://www.sfml-dev.org/documentation/2.5.1/)
-2. Google tests 1.11.0\ 
-[documentation](https://google.github.io/googletest/)\ [github link](https://github.com/google/googletest)
-
+2. Google tests 1.11.0 \ 
+[documentation](https://google.github.io/googletest/)\ 
+[github link](https://github.com/google/googletest)
 3. ???
 
 ## :orange_book: Example of using:

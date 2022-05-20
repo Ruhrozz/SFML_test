@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/SFML_test.dir/src/main.cpp.o CMakeFiles/SFML_test.dir/lib/Buttons.cpp.o -o SFML_test  -Wl,-rpath,/home/ruhrozz/Yandex.Disk/University/NSU_4_session/MPPSD/SFML_test/include/SFML-2.5.1/lib ../include/SFML-2.5.1/lib/libsfml-graphics.so.2.5.1 ../include/SFML-2.5.1/lib/libsfml-window.so.2.5.1 ../include/SFML-2.5.1/lib/libsfml-system.so.2.5.1 

@@ -3,11 +3,6 @@ project(SFML_test)
 
 set(CMAKE_CXX_STANDARD 14)
 
-link_directories("${PROJECT_SOURCE_DIR}/bin")
-
-set(CMAKE_EXE_LINKER_FLAGS "-static -static-libgcc")
-set(SFML_STATIC_LIBRARIES TRUE)
-
 add_executable(SFML_test src/main.cpp lib/Buttons.cpp)
 
 #target_link_libraries( SFML_test
@@ -30,8 +25,8 @@ add_executable(SFML_test src/main.cpp lib/Buttons.cpp)
 
 target_link_libraries(SFML_test sfml-graphics)
 
-set(SFML_DIR "include\\SFML-2.5.1\\lib\\cmake\\SFML")
+set(SFML_DIR "include/SFML-2.5.1/lib/cmake/SFML")
 
-find_package(SFML 2.5 REQUIRED system graphics audio network window)
+find_package(SFML COMPONENTS graphics window system)
 
 

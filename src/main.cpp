@@ -3,7 +3,7 @@
 #include <iostream>
 #include <map>
 #include <vector>
-#include "..\\lib\\Buttons.h"
+#include "../lib/Buttons.h"
 
 sf::Text *getText(const sf::Font& font, const sf::String &str, float x, float y, unsigned int CharacterSize = 15)
 {
@@ -48,8 +48,10 @@ int main()
 
 
     sf::Font font;
-    std::string path(R"(..\src\fonts\ArialRegular.ttf)");
-    font.loadFromFile(path);
+    std::string path(R"(/home/ruhrozz/Desktop/study/MPPSD/SFML_test/src/fonts/ArialRegular.ttf)");
+
+    if (!font.loadFromFile(path))
+        return EXIT_FAILURE;
 
     labels["l1_file"] = getText(font, "File", 13, 7, 15);
     labels["l1_edit"] = getText(font, "Edit", 65, 7, 15);

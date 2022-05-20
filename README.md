@@ -1,7 +1,7 @@
 # Content:
 1. [About project](https://github.com/Ruhrozz/SFML_test#about-project)
-2. [How to install]()
-3. [API](https://github.com/Ruhrozz/SFML_test/blob/master/README.md#api)
+2. [How to install](https://github.com/Ruhrozz/SFML_test#how-to-install)
+3. [API](https://github.com/Ruhrozz/SFML_test/#api)
 4. [Example of using](https://github.com/Ruhrozz/SFML_test#example-of-using)
 5. [Documentation](https://github.com/Ruhrozz/SFML_test#documentation) github pages (html) doxygen
 

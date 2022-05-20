@@ -3,7 +3,7 @@
 2. [How to install]()
 3. [API](https://github.com/Ruhrozz/SFML_test#api-which-we-used)
 4. [Example of using](https://github.com/Ruhrozz/SFML_test#example-of-using)
-5. [Documentation]() github pages (html) doxygen
+5. [Documentation](https://github.com/Ruhrozz/SFML_test#documentation) github pages (html) doxygen
 
 ## About project:
 

@@ -5,7 +5,7 @@
 4. :orange_book:[Example of using](https://github.com/Ruhrozz/SFML_test#example-of-using)
 5. :closed_book:[Documentation](https://github.com/Ruhrozz/SFML_test#documentation) github pages (html) doxygen
 
-## :blue_book: About project:
+# :blue_book: About project:
 
 :art: This project is a simplified drawing program without the ability to add any image to it or save a drawn picture... damn.\
 Like most successful projects, this project is made in a minimalist style and in a dark theme with a minimal set of features.\

@@ -1,14 +1,16 @@
 # TODO :
-- [X] Задача 1
-    - [X] Подзадача 1 для Задачи 1
-    - [X] Подзадача 2 для Задачи 1
-- [ ] Задача 2
-    - [X] Подзадача 1 для Задачи 2
-    - [ ] Подзадача 2 для Задачи 2
-- [ ] Задача 3
-    - [ ] Подзадача 1 для Задачи 3
-        - [ ] Подзадача 1 для Подзадача 1 для Задачи 3
+- [ ] Making documentation
+    - [ ] to write comments 
+    - [ ] doxygen   
+- [ ] Fixing bugs
+    - [ ] button's reaction from left mouse button unpressed 
+- [ ] Docker
+- [ ] To make .exe file to install executable
+- [ ] Write "How to install" after ^
 
+PS: Use
+- [X] Some kind of task
+to sign task completed
 
 # :books: Content:
 1. :blue_book:[About project](https://github.com/Ruhrozz/SFML_test#blue_book-about-project)

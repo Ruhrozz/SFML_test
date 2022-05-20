@@ -42,7 +42,7 @@ Suitable for users who want to learn how to move the cursor on the screen and pr
 3. Doxygen 1.9.4: [documentation](https://doxygen.nl/manual/index.html)
 
 ## :orange_book: Example of using:
-<img src="https://user-images.githubusercontent.com/72031225/169567996-48667532-883d-4044-9ce3-cb77a4af82d1.png" width="500" />
+<img src="https://user-images.githubusercontent.com/72031225/169567996-48667532-883d-4044-9ce3-cb77a4af82d1.png" width="1000" />
 ## :closed_book: Documentation:
 https://www.youtube.com/watch?v=TtRn3HsOm1s
 

@@ -31,3 +31,5 @@ Suitable for users who want to learn how to move the cursor on the screen and pr
 
 
 tasks: 7,8,9,11
+
+tasks: 7,8,9,11

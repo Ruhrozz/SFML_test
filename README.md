@@ -10,13 +10,17 @@ Like most successful projects, this project is made in a minimalist style and in
 Suitable for users who want to learn how to move the cursor on the screen and press buttons and show imagination in black and white pixel art.
 
 ## API which we used:
-![Alt-текст](https://camo.githubusercontent.com/f1cd6496aa46486fae925d16a7eac97db76be820a37cb33ad2bc7cedf4191183/68747470733a2f2f7777772e73666d6c2d6465762e6f72672f696d616765732f6c6f676f2e706e67) ![image](https://user-images.githubusercontent.com/72031225/169479448-7ed0b186-c025-4bc6-83ae-ca751057bb49.png)
+![SFML](https://camo.githubusercontent.com/f1cd6496aa46486fae925d16a7eac97db76be820a37cb33ad2bc7cedf4191183/68747470733a2f2f7777772e73666d6c2d6465762e6f72672f696d616765732f6c6f676f2e706e67)                      ![GOOGLE_TESTS](https://user-images.githubusercontent.com/72031225/169479448-7ed0b186-c025-4bc6-83ae-ca751057bb49.png)
 
 1. Simple and Fast Multimedia Library 2.5.1 
 [documentation](https://www.sfml-dev.org/documentation/2.5.1/)
-3. Google tests 
+2. Google tests 
 [documentation](https://google.github.io/googletest/)\
 [github](https://github.com/google/googletest)
+3. Docker
+[documentation]()
+4. ???
+
 
 ## Example of using:
 

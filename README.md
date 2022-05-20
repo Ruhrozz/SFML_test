@@ -1,9 +1,9 @@
 # :books: Content:
-1. :blue_book:[About project](https://github.com/Ruhrozz/SFML_test#about-project)
-2. :green_book:[How to install](https://github.com/Ruhrozz/SFML_test#how-to-install)
-3. :ledger:[API](https://github.com/Ruhrozz/SFML_test/#api)
-4. :orange_book:[Example of using](https://github.com/Ruhrozz/SFML_test#example-of-using)
-5. :closed_book:[Documentation](https://github.com/Ruhrozz/SFML_test#documentation) github pages (html) doxygen
+1. :blue_book:[About project](https://github.com/Ruhrozz/SFML_test#blue_book-about-project)
+2. :green_book:[How to install](https://github.com/Ruhrozz/SFML_test#greed_book-how-to-install)
+3. :ledger:[API](https://github.com/Ruhrozz/SFML_test/#ledger-api)
+4. :orange_book:[Example of using](https://github.com/Ruhrozz/SFML_test#orange_book-example-of-using)
+5. :closed_book:[Documentation](https://github.com/Ruhrozz/SFML_test#closed_book-documentation) github pages (html) doxygen
 
 ## :blue_book: About project:
 

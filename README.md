@@ -9,9 +9,10 @@
 - [ ] Write "How to install" after ^
 
 PS: Use
-- [X] Some kind of task
+- [X] Some kind of task\
 to sign task completed
 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # :books: Content:
 1. :blue_book:[About project](https://github.com/Ruhrozz/SFML_test#blue_book-about-project)
 2. :green_book:[How to install](https://github.com/Ruhrozz/SFML_test#green_book-how-to-install)

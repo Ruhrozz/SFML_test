@@ -6,9 +6,7 @@
 # It is included in the main 'build.ninja'.
 
 # =============================================================================
-
 # Project: SFML_project
-
 # Configurations: Debug
 # =============================================================================
 # =============================================================================
@@ -16,9 +14,7 @@
 #############################################
 # Rule for compiling CXX files.
 
-
 rule CXX_COMPILER__SFML_project_Debug
-
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -28,9 +24,7 @@ rule CXX_COMPILER__SFML_project_Debug
 #############################################
 # Rule for linking CXX executable.
 
-
 rule CXX_EXECUTABLE_LINKER__SFML_project_Debug
-
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -45,7 +39,6 @@ rule CUSTOM_COMMAND
 
 
 #############################################
-
 # Rule for compiling CXX files.
 
 rule CXX_COMPILER__gmock_Debug
@@ -141,7 +134,6 @@ rule CXX_EXECUTABLE_LINKER__run_basic_gtest_Debug
 
 
 #############################################
-
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE

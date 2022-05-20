@@ -718,6 +718,179 @@
 		},
 		{
 			"path" : "include/SFML-2.5.1/lib/cmake/SFML/SFMLConfigDependencies.cmake"
+		},
+		{
+			"path" : "tests/CMakeLists.txt"
+		},
+		{
+			"path" : "tests/libs/googletest-main/CMakeLists.txt"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeDependentOption.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/GNUInstallDirs.cmake"
+		},
+		{
+			"path" : "tests/libs/googletest-main/googlemock/CMakeLists.txt"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/FindThreads.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CheckLibraryExists.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CheckIncludeFile.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CheckCSourceCompiles.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/FindPackageMessage.cmake"
+		},
+		{
+			"path" : "tests/libs/googletest-main/googlemock/cmake/gmock.pc.in"
+		},
+		{
+			"path" : "tests/libs/googletest-main/googlemock/cmake/gmock_main.pc.in"
+		},
+		{
+			"path" : "tests/libs/googletest-main/googletest/CMakeLists.txt"
+		},
+		{
+			"path" : "tests/libs/googletest-main/googletest/cmake/internal_utils.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/FindPython.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/FindPython/Support.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/FindPackageMessage.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/FindThreads.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CheckLibraryExists.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CheckIncludeFile.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CheckCSourceCompiles.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Internal/CheckSourceCompiles.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CheckIncludeFile.c.in"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CheckFunctionExists.c"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CheckFunctionExists.c"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/FindPackageMessage.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakePackageConfigHelpers.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/WriteBasicConfigVersionFile.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in"
+		},
+		{
+			"path" : "tests/libs/googletest-main/googletest/cmake/Config.cmake.in"
+		},
+		{
+			"path" : "tests/libs/googletest-main/googletest/cmake/gtest.pc.in"
+		},
+		{
+			"path" : "tests/libs/googletest-main/googletest/cmake/gtest_main.pc.in"
+		},
+		{
+			"path" : "tests/tests/CMakeLists.txt"
+		},
+		{
+			"path" : "include/SFML-2.5.1/lib/cmake/SFML/SFMLConfigVersion.cmake"
+		},
+		{
+			"path" : "include/SFML-2.5.1/lib/cmake/SFML/SFMLConfig.cmake"
+		},
+		{
+			"path" : "include/SFML-2.5.1/lib/cmake/SFML/SFMLSharedTargets.cmake"
+		},
+		{
+			"path" : "include/SFML-2.5.1/lib/cmake/SFML/SFMLSharedTargets-release.cmake"
+		},
+		{
+			"path" : "include/SFML-2.5.1/lib/cmake/SFML/SFMLConfigDependencies.cmake"
 		}
 	],
 	"kind" : "cmakeFiles",

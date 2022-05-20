@@ -1538,42 +1538,6 @@
 			"value" : "SFML_DOC_DIR-NOTFOUND"
 		},
 		{
-			"name" : "SFML_gtest_BINARY_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "/home/ruhrozz/Yandex.Disk/University/NSU_4_session/MPPSD/SFML_test/cmake-build-debug/tests/tests"
-		},
-		{
-			"name" : "SFML_gtest_IS_TOP_LEVEL",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "OFF"
-		},
-		{
-			"name" : "SFML_gtest_SOURCE_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "/home/ruhrozz/Yandex.Disk/University/NSU_4_session/MPPSD/SFML_test/tests/tests"
-		},
-		{
 			"name" : "SFML_project_BINARY_DIR",
 			"properties" : 
 			[
@@ -1599,42 +1563,6 @@
 		},
 		{
 			"name" : "SFML_project_SOURCE_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "/home/ruhrozz/Yandex.Disk/University/NSU_4_session/MPPSD/SFML_test"
-		},
-		{
-			"name" : "SFML_test_BINARY_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "/home/ruhrozz/Yandex.Disk/University/NSU_4_session/MPPSD/SFML_test/cmake-build-debug"
-		},
-		{
-			"name" : "SFML_test_IS_TOP_LEVEL",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "ON"
-		},
-		{
-			"name" : "SFML_test_SOURCE_DIR",
 			"properties" : 
 			[
 				{

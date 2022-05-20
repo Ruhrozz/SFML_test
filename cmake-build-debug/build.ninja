@@ -11,9 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-
 # Project: SFML_project
-
 # Configurations: Debug
 # =============================================================================
 
@@ -43,7 +41,6 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = /home/ruhrozz/Yandex.Disk/University/NSU_4_session/MPPSD/SFML_test/cmake-build-debug/
 # =============================================================================
-
 # Object build statements for EXECUTABLE target SFML_project
 
 
@@ -58,6 +55,8 @@ build CMakeFiles/SFML_project.dir/src/main.cpp.o: CXX_COMPILER__SFML_project_Deb
   INCLUDES = -isystem /home/ruhrozz/Yandex.Disk/University/NSU_4_session/MPPSD/SFML_test/include/SFML-2.5.1/include
   OBJECT_DIR = CMakeFiles/SFML_project.dir
   OBJECT_FILE_DIR = CMakeFiles/SFML_project.dir/src
+  TARGET_COMPILE_PDB = CMakeFiles/SFML_project.dir/
+  TARGET_PDB = SFML_project.pdb
 
 build CMakeFiles/SFML_project.dir/lib/Buttons.cpp.o: CXX_COMPILER__SFML_project_Debug /home/ruhrozz/Yandex.Disk/University/NSU_4_session/MPPSD/SFML_test/lib/Buttons.cpp || cmake_object_order_depends_target_SFML_project
   DEP_FILE = CMakeFiles/SFML_project.dir/lib/Buttons.cpp.o.d
@@ -65,6 +64,8 @@ build CMakeFiles/SFML_project.dir/lib/Buttons.cpp.o: CXX_COMPILER__SFML_project_
   INCLUDES = -isystem /home/ruhrozz/Yandex.Disk/University/NSU_4_session/MPPSD/SFML_test/include/SFML-2.5.1/include
   OBJECT_DIR = CMakeFiles/SFML_project.dir
   OBJECT_FILE_DIR = CMakeFiles/SFML_project.dir/lib
+  TARGET_COMPILE_PDB = CMakeFiles/SFML_project.dir/
+  TARGET_PDB = SFML_project.pdb
 
 
 # =============================================================================
@@ -80,9 +81,9 @@ build SFML_project: CXX_EXECUTABLE_LINKER__SFML_project_Debug CMakeFiles/SFML_pr
   OBJECT_DIR = CMakeFiles/SFML_project.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = CMakeFiles/SFML_project.dir/
   TARGET_FILE = SFML_project
-  TARGET_PDB = SFML_project.dbg
-
+  TARGET_PDB = SFML_project.pdb
 
 
 #############################################
@@ -312,6 +313,8 @@ build tests/libs/googletest-main/googlemock/CMakeFiles/gmock.dir/src/gmock-all.c
   INCLUDES = -I/home/ruhrozz/Yandex.Disk/University/NSU_4_session/MPPSD/SFML_test/tests/libs/googletest-main/googlemock/include -I/home/ruhrozz/Yandex.Disk/University/NSU_4_session/MPPSD/SFML_test/tests/libs/googletest-main/googlemock -isystem /home/ruhrozz/Yandex.Disk/University/NSU_4_session/MPPSD/SFML_test/tests/libs/googletest-main/googletest/include -isystem /home/ruhrozz/Yandex.Disk/University/NSU_4_session/MPPSD/SFML_test/tests/libs/googletest-main/googletest
   OBJECT_DIR = tests/libs/googletest-main/googlemock/CMakeFiles/gmock.dir
   OBJECT_FILE_DIR = tests/libs/googletest-main/googlemock/CMakeFiles/gmock.dir/src
+  TARGET_COMPILE_PDB = bin/libgmockpdb_debug_postfix-NOTFOUND.pdb
+  TARGET_PDB = bin/libgmockpdb_debug_postfix-NOTFOUND.pdb
 
 
 # =============================================================================
@@ -326,8 +329,9 @@ build lib/libgmock.a: CXX_STATIC_LIBRARY_LINKER__gmock_Debug tests/libs/googlete
   OBJECT_DIR = tests/libs/googletest-main/googlemock/CMakeFiles/gmock.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = bin/libgmockpdb_debug_postfix-NOTFOUND.pdb
   TARGET_FILE = lib/libgmock.a
-  TARGET_PDB = gmock.a.dbg
+  TARGET_PDB = bin/libgmockpdb_debug_postfix-NOTFOUND.pdb
 
 # =============================================================================
 # Object build statements for STATIC_LIBRARY target gmock_main
@@ -344,6 +348,8 @@ build tests/libs/googletest-main/googlemock/CMakeFiles/gmock_main.dir/src/gmock_
   INCLUDES = -isystem /home/ruhrozz/Yandex.Disk/University/NSU_4_session/MPPSD/SFML_test/tests/libs/googletest-main/googlemock/include -isystem /home/ruhrozz/Yandex.Disk/University/NSU_4_session/MPPSD/SFML_test/tests/libs/googletest-main/googlemock -isystem /home/ruhrozz/Yandex.Disk/University/NSU_4_session/MPPSD/SFML_test/tests/libs/googletest-main/googletest/include -isystem /home/ruhrozz/Yandex.Disk/University/NSU_4_session/MPPSD/SFML_test/tests/libs/googletest-main/googletest
   OBJECT_DIR = tests/libs/googletest-main/googlemock/CMakeFiles/gmock_main.dir
   OBJECT_FILE_DIR = tests/libs/googletest-main/googlemock/CMakeFiles/gmock_main.dir/src
+  TARGET_COMPILE_PDB = bin/libgmock_mainpdb_debug_postfix-NOTFOUND.pdb
+  TARGET_PDB = bin/libgmock_mainpdb_debug_postfix-NOTFOUND.pdb
 
 
 # =============================================================================
@@ -358,8 +364,9 @@ build lib/libgmock_main.a: CXX_STATIC_LIBRARY_LINKER__gmock_main_Debug tests/lib
   OBJECT_DIR = tests/libs/googletest-main/googlemock/CMakeFiles/gmock_main.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = bin/libgmock_mainpdb_debug_postfix-NOTFOUND.pdb
   TARGET_FILE = lib/libgmock_main.a
-  TARGET_PDB = gmock_main.a.dbg
+  TARGET_PDB = bin/libgmock_mainpdb_debug_postfix-NOTFOUND.pdb
 
 
 #############################################
@@ -447,6 +454,8 @@ build tests/libs/googletest-main/googletest/CMakeFiles/gtest.dir/src/gtest-all.c
   INCLUDES = -I/home/ruhrozz/Yandex.Disk/University/NSU_4_session/MPPSD/SFML_test/tests/libs/googletest-main/googletest/include -I/home/ruhrozz/Yandex.Disk/University/NSU_4_session/MPPSD/SFML_test/tests/libs/googletest-main/googletest
   OBJECT_DIR = tests/libs/googletest-main/googletest/CMakeFiles/gtest.dir
   OBJECT_FILE_DIR = tests/libs/googletest-main/googletest/CMakeFiles/gtest.dir/src
+  TARGET_COMPILE_PDB = bin/libgtestpdb_debug_postfix-NOTFOUND.pdb
+  TARGET_PDB = bin/libgtestpdb_debug_postfix-NOTFOUND.pdb
 
 
 # =============================================================================
@@ -461,8 +470,9 @@ build lib/libgtest.a: CXX_STATIC_LIBRARY_LINKER__gtest_Debug tests/libs/googlete
   OBJECT_DIR = tests/libs/googletest-main/googletest/CMakeFiles/gtest.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = bin/libgtestpdb_debug_postfix-NOTFOUND.pdb
   TARGET_FILE = lib/libgtest.a
-  TARGET_PDB = gtest.a.dbg
+  TARGET_PDB = bin/libgtestpdb_debug_postfix-NOTFOUND.pdb
 
 # =============================================================================
 # Object build statements for STATIC_LIBRARY target gtest_main
@@ -479,6 +489,8 @@ build tests/libs/googletest-main/googletest/CMakeFiles/gtest_main.dir/src/gtest_
   INCLUDES = -isystem /home/ruhrozz/Yandex.Disk/University/NSU_4_session/MPPSD/SFML_test/tests/libs/googletest-main/googletest/include -isystem /home/ruhrozz/Yandex.Disk/University/NSU_4_session/MPPSD/SFML_test/tests/libs/googletest-main/googletest
   OBJECT_DIR = tests/libs/googletest-main/googletest/CMakeFiles/gtest_main.dir
   OBJECT_FILE_DIR = tests/libs/googletest-main/googletest/CMakeFiles/gtest_main.dir/src
+  TARGET_COMPILE_PDB = bin/libgtest_mainpdb_debug_postfix-NOTFOUND.pdb
+  TARGET_PDB = bin/libgtest_mainpdb_debug_postfix-NOTFOUND.pdb
 
 
 # =============================================================================
@@ -493,8 +505,9 @@ build lib/libgtest_main.a: CXX_STATIC_LIBRARY_LINKER__gtest_main_Debug tests/lib
   OBJECT_DIR = tests/libs/googletest-main/googletest/CMakeFiles/gtest_main.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = bin/libgtest_mainpdb_debug_postfix-NOTFOUND.pdb
   TARGET_FILE = lib/libgtest_main.a
-  TARGET_PDB = gtest_main.a.dbg
+  TARGET_PDB = bin/libgtest_mainpdb_debug_postfix-NOTFOUND.pdb
 
 
 #############################################
@@ -582,6 +595,8 @@ build tests/tests/CMakeFiles/run_basic_gtest.dir/sfml_check.cpp.o: CXX_COMPILER_
   INCLUDES = -I/home/ruhrozz/Yandex.Disk/University/NSU_4_session/MPPSD/SFML_test/tests/tests/../libs/googletest-main/googletest -I/home/ruhrozz/Yandex.Disk/University/NSU_4_session/MPPSD/SFML_test/tests/tests/../libs/googletest-main/googletest/include -isystem /home/ruhrozz/Yandex.Disk/University/NSU_4_session/MPPSD/SFML_test/include/SFML-2.5.1/include -isystem /home/ruhrozz/Yandex.Disk/University/NSU_4_session/MPPSD/SFML_test/tests/libs/googletest-main/googlemock/include -isystem /home/ruhrozz/Yandex.Disk/University/NSU_4_session/MPPSD/SFML_test/tests/libs/googletest-main/googlemock -isystem /home/ruhrozz/Yandex.Disk/University/NSU_4_session/MPPSD/SFML_test/tests/libs/googletest-main/googletest/include -isystem /home/ruhrozz/Yandex.Disk/University/NSU_4_session/MPPSD/SFML_test/tests/libs/googletest-main/googletest
   OBJECT_DIR = tests/tests/CMakeFiles/run_basic_gtest.dir
   OBJECT_FILE_DIR = tests/tests/CMakeFiles/run_basic_gtest.dir
+  TARGET_COMPILE_PDB = tests/tests/CMakeFiles/run_basic_gtest.dir/
+  TARGET_PDB = tests/tests/run_basic_gtest.pdb
 
 build tests/tests/CMakeFiles/run_basic_gtest.dir/font_check.cpp.o: CXX_COMPILER__run_basic_gtest_Debug /home/ruhrozz/Yandex.Disk/University/NSU_4_session/MPPSD/SFML_test/tests/tests/font_check.cpp || cmake_object_order_depends_target_run_basic_gtest
   DEP_FILE = tests/tests/CMakeFiles/run_basic_gtest.dir/font_check.cpp.o.d
@@ -589,6 +604,8 @@ build tests/tests/CMakeFiles/run_basic_gtest.dir/font_check.cpp.o: CXX_COMPILER_
   INCLUDES = -I/home/ruhrozz/Yandex.Disk/University/NSU_4_session/MPPSD/SFML_test/tests/tests/../libs/googletest-main/googletest -I/home/ruhrozz/Yandex.Disk/University/NSU_4_session/MPPSD/SFML_test/tests/tests/../libs/googletest-main/googletest/include -isystem /home/ruhrozz/Yandex.Disk/University/NSU_4_session/MPPSD/SFML_test/include/SFML-2.5.1/include -isystem /home/ruhrozz/Yandex.Disk/University/NSU_4_session/MPPSD/SFML_test/tests/libs/googletest-main/googlemock/include -isystem /home/ruhrozz/Yandex.Disk/University/NSU_4_session/MPPSD/SFML_test/tests/libs/googletest-main/googlemock -isystem /home/ruhrozz/Yandex.Disk/University/NSU_4_session/MPPSD/SFML_test/tests/libs/googletest-main/googletest/include -isystem /home/ruhrozz/Yandex.Disk/University/NSU_4_session/MPPSD/SFML_test/tests/libs/googletest-main/googletest
   OBJECT_DIR = tests/tests/CMakeFiles/run_basic_gtest.dir
   OBJECT_FILE_DIR = tests/tests/CMakeFiles/run_basic_gtest.dir
+  TARGET_COMPILE_PDB = tests/tests/CMakeFiles/run_basic_gtest.dir/
+  TARGET_PDB = tests/tests/run_basic_gtest.pdb
 
 build tests/tests/CMakeFiles/run_basic_gtest.dir/basic_check.cpp.o: CXX_COMPILER__run_basic_gtest_Debug /home/ruhrozz/Yandex.Disk/University/NSU_4_session/MPPSD/SFML_test/tests/tests/basic_check.cpp || cmake_object_order_depends_target_run_basic_gtest
   DEP_FILE = tests/tests/CMakeFiles/run_basic_gtest.dir/basic_check.cpp.o.d
@@ -596,6 +613,8 @@ build tests/tests/CMakeFiles/run_basic_gtest.dir/basic_check.cpp.o: CXX_COMPILER
   INCLUDES = -I/home/ruhrozz/Yandex.Disk/University/NSU_4_session/MPPSD/SFML_test/tests/tests/../libs/googletest-main/googletest -I/home/ruhrozz/Yandex.Disk/University/NSU_4_session/MPPSD/SFML_test/tests/tests/../libs/googletest-main/googletest/include -isystem /home/ruhrozz/Yandex.Disk/University/NSU_4_session/MPPSD/SFML_test/include/SFML-2.5.1/include -isystem /home/ruhrozz/Yandex.Disk/University/NSU_4_session/MPPSD/SFML_test/tests/libs/googletest-main/googlemock/include -isystem /home/ruhrozz/Yandex.Disk/University/NSU_4_session/MPPSD/SFML_test/tests/libs/googletest-main/googlemock -isystem /home/ruhrozz/Yandex.Disk/University/NSU_4_session/MPPSD/SFML_test/tests/libs/googletest-main/googletest/include -isystem /home/ruhrozz/Yandex.Disk/University/NSU_4_session/MPPSD/SFML_test/tests/libs/googletest-main/googletest
   OBJECT_DIR = tests/tests/CMakeFiles/run_basic_gtest.dir
   OBJECT_FILE_DIR = tests/tests/CMakeFiles/run_basic_gtest.dir
+  TARGET_COMPILE_PDB = tests/tests/CMakeFiles/run_basic_gtest.dir/
+  TARGET_PDB = tests/tests/run_basic_gtest.pdb
 
 
 # =============================================================================
@@ -611,8 +630,9 @@ build tests/tests/run_basic_gtest: CXX_EXECUTABLE_LINKER__run_basic_gtest_Debug 
   OBJECT_DIR = tests/tests/CMakeFiles/run_basic_gtest.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = tests/tests/CMakeFiles/run_basic_gtest.dir/
   TARGET_FILE = tests/tests/run_basic_gtest
-  TARGET_PDB = run_basic_gtest.dbg
+  TARGET_PDB = tests/tests/run_basic_gtest.pdb
 
 
 #############################################
@@ -701,7 +721,6 @@ build libgtest_main.a: phony lib/libgtest_main.a
 
 build run_basic_gtest: phony tests/tests/run_basic_gtest
 
-
 # =============================================================================
 # Folder targets.
 
@@ -709,7 +728,6 @@ build run_basic_gtest: phony tests/tests/run_basic_gtest
 
 #############################################
 # Folder: /home/ruhrozz/Yandex.Disk/University/NSU_4_session/MPPSD/SFML_test/cmake-build-debug
-
 
 build all: phony SFML_project tests/all
 
@@ -748,7 +766,6 @@ build tests/libs/googletest-main/googletest/all: phony lib/libgtest.a lib/libgte
 
 build tests/tests/all: phony tests/tests/run_basic_gtest
 
-
 # =============================================================================
 # Built-in targets
 
@@ -756,18 +773,14 @@ build tests/tests/all: phony tests/tests/run_basic_gtest
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-
-build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../include/SFML-2.5.1/lib/cmake/SFML/SFMLConfig.cmake ../include/SFML-2.5.1/lib/cmake/SFML/SFMLConfigDependencies.cmake ../include/SFML-2.5.1/lib/cmake/SFML/SFMLConfigVersion.cmake ../include/SFML-2.5.1/lib/cmake/SFML/SFMLSharedTargets-release.cmake ../include/SFML-2.5.1/lib/cmake/SFML/SFMLSharedTargets.cmake ../tests/CMakeLists.txt ../tests/libs/googletest-main/CMakeLists.txt ../tests/libs/googletest-main/googlemock/CMakeLists.txt ../tests/libs/googletest-main/googlemock/cmake/gmock.pc.in ../tests/libs/googletest-main/googlemock/cmake/gmock_main.pc.in ../tests/libs/googletest-main/googletest/CMakeLists.txt ../tests/libs/googletest-main/googletest/cmake/Config.cmake.in ../tests/libs/googletest-main/googletest/cmake/gtest.pc.in ../tests/libs/googletest-main/googletest/cmake/gtest_main.pc.in ../tests/libs/googletest-main/googletest/cmake/internal_utils.cmake ../tests/tests/CMakeLists.txt /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCInformation.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCXXInformation.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeDependentOption.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeGenericSystem.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakePackageConfigHelpers.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CheckCSourceCompiles.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CheckIncludeFile.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CheckLibraryExists.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GNU-C.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GNU-CXX.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GNU.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/FindPackageMessage.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/FindPython.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/FindPython/Support.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/FindThreads.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/GNUInstallDirs.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Internal/CheckSourceCompiles.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux-GNU-C.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux-GNU-CXX.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux-GNU.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Platform/UnixPaths.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/3.22.3/CMakeCCompiler.cmake CMakeFiles/3.22.3/CMakeCXXCompiler.cmake CMakeFiles/3.22.3/CMakeSystem.cmake
-
+build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../include/SFML-2.5.1/lib/cmake/SFML/SFMLConfig.cmake ../include/SFML-2.5.1/lib/cmake/SFML/SFMLConfigDependencies.cmake ../include/SFML-2.5.1/lib/cmake/SFML/SFMLConfigVersion.cmake ../include/SFML-2.5.1/lib/cmake/SFML/SFMLSharedTargets-release.cmake ../include/SFML-2.5.1/lib/cmake/SFML/SFMLSharedTargets.cmake ../tests/CMakeLists.txt ../tests/libs/googletest-main/CMakeLists.txt ../tests/libs/googletest-main/googlemock/CMakeLists.txt ../tests/libs/googletest-main/googlemock/cmake/gmock.pc.in ../tests/libs/googletest-main/googlemock/cmake/gmock_main.pc.in ../tests/libs/googletest-main/googletest/CMakeLists.txt ../tests/libs/googletest-main/googletest/cmake/Config.cmake.in ../tests/libs/googletest-main/googletest/cmake/gtest.pc.in ../tests/libs/googletest-main/googletest/cmake/gtest_main.pc.in ../tests/libs/googletest-main/googletest/cmake/internal_utils.cmake ../tests/tests/CMakeLists.txt /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCCompiler.cmake.in /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCCompilerABI.c /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCInformation.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCXXCompiler.cmake.in /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCXXInformation.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCompilerIdDetection.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeDependentOption.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeDetermineCCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeDetermineCXXCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeDetermineCompileFeatures.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeDetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeDetermineCompilerABI.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeDetermineCompilerId.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeDetermineSystem.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeFindBinUtils.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeGenericSystem.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakePackageConfigHelpers.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeParseImplicitIncludeInfo.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeParseImplicitLinkInfo.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeParseLibraryArchitecture.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeSystem.cmake.in /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeTestCCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeTestCXXCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeTestCompilerCommon.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CheckCSourceCompiles.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CheckFunctionExists.c /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CheckIncludeFile.c.in /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CheckIncludeFile.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CheckLibraryExists.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/ADSP-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/ARMCC-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/ARMClang-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/AppleClang-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Borland-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Clang-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Cray-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GHS-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GNU-C-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GNU-C.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GNU-CXX.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GNU-FindBinUtils.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GNU.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/HP-C-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/IAR-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Intel-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/MSVC-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/NVHPC-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/PGI-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/PathScale-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/SCO-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/TI-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Watcom-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/XL-C-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/zOS-C-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/FindPackageMessage.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/FindPython.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/FindPython/Support.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/FindThreads.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/GNUInstallDirs.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Internal/CheckSourceCompiles.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Internal/FeatureTesting.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux-Determine-CXX.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux-GNU-C.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux-GNU-CXX.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux-GNU.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Platform/UnixPaths.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/3.22.3/CMakeCCompiler.cmake CMakeFiles/3.22.3/CMakeCXXCompiler.cmake CMakeFiles/3.22.3/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-
-build ../CMakeLists.txt ../include/SFML-2.5.1/lib/cmake/SFML/SFMLConfig.cmake ../include/SFML-2.5.1/lib/cmake/SFML/SFMLConfigDependencies.cmake ../include/SFML-2.5.1/lib/cmake/SFML/SFMLConfigVersion.cmake ../include/SFML-2.5.1/lib/cmake/SFML/SFMLSharedTargets-release.cmake ../include/SFML-2.5.1/lib/cmake/SFML/SFMLSharedTargets.cmake ../tests/CMakeLists.txt ../tests/libs/googletest-main/CMakeLists.txt ../tests/libs/googletest-main/googlemock/CMakeLists.txt ../tests/libs/googletest-main/googlemock/cmake/gmock.pc.in ../tests/libs/googletest-main/googlemock/cmake/gmock_main.pc.in ../tests/libs/googletest-main/googletest/CMakeLists.txt ../tests/libs/googletest-main/googletest/cmake/Config.cmake.in ../tests/libs/googletest-main/googletest/cmake/gtest.pc.in ../tests/libs/googletest-main/googletest/cmake/gtest_main.pc.in ../tests/libs/googletest-main/googletest/cmake/internal_utils.cmake ../tests/tests/CMakeLists.txt /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCInformation.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCXXInformation.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeDependentOption.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeGenericSystem.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakePackageConfigHelpers.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CheckCSourceCompiles.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CheckIncludeFile.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CheckLibraryExists.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GNU-C.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GNU-CXX.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GNU.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/FindPackageMessage.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/FindPython.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/FindPython/Support.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/FindThreads.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/GNUInstallDirs.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Internal/CheckSourceCompiles.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux-GNU-C.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux-GNU-CXX.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux-GNU.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Platform/UnixPaths.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/3.22.3/CMakeCCompiler.cmake CMakeFiles/3.22.3/CMakeCXXCompiler.cmake CMakeFiles/3.22.3/CMakeSystem.cmake: phony
-
+build ../CMakeLists.txt ../include/SFML-2.5.1/lib/cmake/SFML/SFMLConfig.cmake ../include/SFML-2.5.1/lib/cmake/SFML/SFMLConfigDependencies.cmake ../include/SFML-2.5.1/lib/cmake/SFML/SFMLConfigVersion.cmake ../include/SFML-2.5.1/lib/cmake/SFML/SFMLSharedTargets-release.cmake ../include/SFML-2.5.1/lib/cmake/SFML/SFMLSharedTargets.cmake ../tests/CMakeLists.txt ../tests/libs/googletest-main/CMakeLists.txt ../tests/libs/googletest-main/googlemock/CMakeLists.txt ../tests/libs/googletest-main/googlemock/cmake/gmock.pc.in ../tests/libs/googletest-main/googlemock/cmake/gmock_main.pc.in ../tests/libs/googletest-main/googletest/CMakeLists.txt ../tests/libs/googletest-main/googletest/cmake/Config.cmake.in ../tests/libs/googletest-main/googletest/cmake/gtest.pc.in ../tests/libs/googletest-main/googletest/cmake/gtest_main.pc.in ../tests/libs/googletest-main/googletest/cmake/internal_utils.cmake ../tests/tests/CMakeLists.txt /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCCompiler.cmake.in /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCCompilerABI.c /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCInformation.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCXXCompiler.cmake.in /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCXXInformation.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeCompilerIdDetection.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeDependentOption.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeDetermineCCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeDetermineCXXCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeDetermineCompileFeatures.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeDetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeDetermineCompilerABI.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeDetermineCompilerId.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeDetermineSystem.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeFindBinUtils.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeGenericSystem.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakePackageConfigHelpers.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeParseImplicitIncludeInfo.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeParseImplicitLinkInfo.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeParseLibraryArchitecture.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeSystem.cmake.in /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeTestCCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeTestCXXCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CMakeTestCompilerCommon.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CheckCSourceCompiles.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CheckFunctionExists.c /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CheckIncludeFile.c.in /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CheckIncludeFile.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/CheckLibraryExists.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/ADSP-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/ARMCC-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/ARMClang-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/AppleClang-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Borland-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Clang-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Cray-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GHS-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GNU-C-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GNU-C.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GNU-CXX.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GNU-FindBinUtils.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/GNU.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/HP-C-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/IAR-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Intel-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/MSVC-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/NVHPC-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/PGI-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/PathScale-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/SCO-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/TI-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/Watcom-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/XL-C-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/zOS-C-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/FindPackageMessage.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/FindPython.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/FindPython/Support.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/FindThreads.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/GNUInstallDirs.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Internal/CheckSourceCompiles.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Internal/FeatureTesting.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux-Determine-CXX.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux-GNU-C.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux-GNU-CXX.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux-GNU.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Platform/Linux.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/Platform/UnixPaths.cmake /snap/clion/190/bin/cmake/linux/share/cmake-3.22/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/3.22.3/CMakeCCompiler.cmake CMakeFiles/3.22.3/CMakeCXXCompiler.cmake CMakeFiles/3.22.3/CMakeSystem.cmake: phony
 
 
 #############################################

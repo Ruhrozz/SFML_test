@@ -1,6 +1,5 @@
 #include <SFML/Window.hpp>
 #include <SFML/Graphics.hpp>
-#include <iostream>
 #include <map>
 #include <vector>
 #include "../lib/Buttons.h"

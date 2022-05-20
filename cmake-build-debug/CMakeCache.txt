@@ -280,15 +280,6 @@ INSTALL_GTEST:BOOL=ON
 SFML_DOC_DIR:PATH=SFML_DOC_DIR-NOTFOUND
 
 //Value Computed by CMake
-SFML_gtest_BINARY_DIR:STATIC=/home/ruhrozz/Yandex.Disk/University/NSU_4_session/MPPSD/SFML_test/cmake-build-debug/tests/tests
-
-//Value Computed by CMake
-SFML_gtest_IS_TOP_LEVEL:STATIC=OFF
-
-//Value Computed by CMake
-SFML_gtest_SOURCE_DIR:STATIC=/home/ruhrozz/Yandex.Disk/University/NSU_4_session/MPPSD/SFML_test/tests/tests
-
-//Value Computed by CMake
 SFML_project_BINARY_DIR:STATIC=/home/ruhrozz/Yandex.Disk/University/NSU_4_session/MPPSD/SFML_test/cmake-build-debug
 
 //Value Computed by CMake
@@ -296,18 +287,6 @@ SFML_project_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 SFML_project_SOURCE_DIR:STATIC=/home/ruhrozz/Yandex.Disk/University/NSU_4_session/MPPSD/SFML_test
-//Path to a file.
-SFML_DOC_DIR:PATH=SFML_DOC_DIR-NOTFOUND
-
-//Value Computed by CMake
-SFML_test_BINARY_DIR:STATIC=/home/ruhrozz/Yandex.Disk/University/NSU_4_session/MPPSD/SFML_test/cmake-build-debug
-
-//Value Computed by CMake
-SFML_test_IS_TOP_LEVEL:STATIC=ON
-
-//Value Computed by CMake
-SFML_test_SOURCE_DIR:STATIC=/home/ruhrozz/Yandex.Disk/University/NSU_4_session/MPPSD/SFML_test
-
 
 //Value Computed by CMake
 gmock_BINARY_DIR:STATIC=/home/ruhrozz/Yandex.Disk/University/NSU_4_session/MPPSD/SFML_test/cmake-build-debug/tests/libs/googletest-main/googlemock

@@ -18,7 +18,7 @@ sf::Text *getText(const sf::Font& font, const sf::String &str, float x, float y,
 
 int main()
 {
-    const float INIT_RESOLUTION[] = {800, 600};
+    const float INIT_RESOLUTION[] = {1280, 720};
     bool isFullscreen = false;
     bool isDrawing = false;
     

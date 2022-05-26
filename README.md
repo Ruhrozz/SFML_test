@@ -1,6 +1,6 @@
 # :pencil2: TODO :
 - [ ] Making documentation
-    - [ ] to write comments 
+    - [X] to write comments 
     - [ ] doxygen   
 - [ ] Fixing bugs
     - [ ] button's reaction from left mouse button unpressed 

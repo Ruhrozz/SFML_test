@@ -5,7 +5,12 @@ set(CMAKE_CXX_STANDARD 14)
 add_subdirectory(tests)
 
 
-add_executable(SFML_project src/main.cpp lib/Buttons.cpp)
+add_executable(SFML_project
+        src/main.cpp
+        lib/Buttons.cpp
+        lib/Buttons.h
+        lib/Text.cpp
+        lib/Text.h)
 
 target_link_libraries(SFML_project sfml-graphics)
 

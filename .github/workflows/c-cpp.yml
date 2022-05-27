@@ -14,5 +14,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: configure
-      run: cmake --build cmake-build-debug --target SFML_project -j 3
+      run: cmake .
+    - name: build
+      run: cmake --build .
 

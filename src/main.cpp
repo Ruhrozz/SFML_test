@@ -38,7 +38,7 @@ int main()
 
 
     sf::Font font;
-    std::string path(R"(/home/ruhrozz/Desktop/study/MPPSD/SFML_test/src/fonts/ArialRegular.ttf)");
+    std::string path(R"(fonts/ArialRegular.ttf)");
 
     if (!font.loadFromFile(path))
         return EXIT_FAILURE;

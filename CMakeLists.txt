@@ -33,5 +33,7 @@ target_link_libraries(SFML_test sfml-graphics)
 set(SFML_DIR "include\\SFML-2.5.1\\lib\\cmake\\SFML")
 
 find_package(SFML 2.5 REQUIRED system graphics audio network window)
+find_package(OpenGL REQUIRED)
+find_package(X11 COMPONENTS X11 Xft)
 
 

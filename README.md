@@ -21,10 +21,10 @@ Like most successful projects, this project is made in a minimalist style and in
 Suitable for users who want to learn how to move the cursor on the screen and press buttons and show imagination in black and white pixel art.
 
 ## :green_book: How to install:
-1. Скачат
-2. Установит
-3. Рисоват
-4.
+1. Download the files you need from realises:
+![image](https://user-images.githubusercontent.com/72031225/170660052-dcd5e9a2-a726-4cad-ae78-79e28cef6c3e.png)
+2. Install all files from an archive in new directory  
+3. Execute bash.sh
 
 ## :ledger: API:
 

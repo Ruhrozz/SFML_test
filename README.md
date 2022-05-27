@@ -41,4 +41,4 @@ Suitable for users who want to learn how to move the cursor on the screen and pr
 ## :closed_book: Documentation:
 
 http://Ruhrozz.github.io/SFML_test/doc/index.html
-https://rawgithub.com/doc/html/
+https://Ruhrozz.github.io/SFML_test/doc/html/index.html

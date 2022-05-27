@@ -40,4 +40,5 @@ Suitable for users who want to learn how to move the cursor on the screen and pr
 
 ## :closed_book: Documentation:
 
-https://rawgithub.com/doc/html/index.html
+http://username.github.io/doc
+https://rawgithub.com/doc/html/

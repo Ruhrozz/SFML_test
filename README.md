@@ -1,16 +1,10 @@
 # :pencil2: TODO :
 - [ ] Making documentation
     - [X] to write comments 
-    - [ ] doxygen   
-- [ ] Fixing bugs
-    - [ ] button's reaction from left mouse button unpressed 
-- [ ] Docker
-- [ ] To make .exe file to install executable
+    - [X] doxygen   
+- [X] Docker
+- [X] To make .exe file to install executable
 - [ ] Write "How to install" after ^
-
-PS: Use
-- [X] Some kind of task\
-to sign task completed
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # :books: Content:
@@ -18,7 +12,7 @@ to sign task completed
 2. :green_book:[How to install](https://github.com/Ruhrozz/SFML_test#green_book-how-to-install)
 3. :ledger:[API](https://github.com/Ruhrozz/SFML_test/#ledger-api)
 4. :orange_book:[Example of using](https://github.com/Ruhrozz/SFML_test#orange_book-example-of-using)
-5. :closed_book:[Documentation](https://github.com/Ruhrozz/SFML_test#closed_book-documentation) github pages (html) doxygen
+5. :closed_book:[Documentation](https://github.com/Ruhrozz/SFML_test#closed_book-documentation)
 
 ## :blue_book: About project:
 
@@ -45,7 +39,4 @@ Suitable for users who want to learn how to move the cursor on the screen and pr
 <img src="https://user-images.githubusercontent.com/72031225/169567996-48667532-883d-4044-9ce3-cb77a4af82d1.png" width="700" />
 
 ## :closed_book: Documentation:
-https://www.youtube.com/watch?v=TtRn3HsOm1s
-
-tasks: 7,8,9,11
 

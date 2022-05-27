@@ -4,9 +4,9 @@
 #include <SFML/Graphics.hpp>
 #include <SFML/Window.hpp>
 
-/**
- * The class Text is class type of sf::Text, it is has a public method *getText, which is the constructor of the class.
- */
+/// The class Text is class type of sf::Text.
+///
+/// It is has a public method *getText, which is the constructor of the class.
 
 
 class Text

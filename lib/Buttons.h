@@ -4,6 +4,9 @@
 #include <SFML/Graphics.hpp>
 #include <SFML/Window.hpp>
 
+/// The class Buttons is class type of sf::RectangleShape.
+///
+/// It is has a public method *getButton, which is the constructor of the class.
 
 class Buttons
 {

@@ -1,6 +1,4 @@
-/snap/clion/190/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/snap/clion/190/bin/ninja/linux/ninja -G Ninja -S /home/ruhrozz/Yandex.Disk/University/NSU_4_session/MPPSD/SFML_test -B /home/ruhrozz/Yandex.Disk/University/NSU_4_session/MPPSD/SFML_test/cmake-build-debug
--- Found SFML 2.5.1 in /home/ruhrozz/Yandex.Disk/University/NSU_4_session/MPPSD/SFML_test/include/SFML-2.5.1/lib/cmake/SFML
--- Found SFML 2.5.1 in /home/ruhrozz/Yandex.Disk/University/NSU_4_session/MPPSD/SFML_test/include/SFML-2.5.1/lib/cmake/SFML
--- Configuring done
--- Generating done
--- Build files have been written to: /home/ruhrozz/Yandex.Disk/University/NSU_4_session/MPPSD/SFML_test/cmake-build-debug
+Cannot generate into C:\Users\ashim\Desktop\sfml\SFML_test
+It is already used for project \home\ruhrozz\Yandex.Disk\University\NSU_4_session\MPPSD\SFML_test
+
+Please either delete it manually or select another generation directory

@@ -25,16 +25,23 @@
 var NAVTREE =
 [
   [ "Drawing software", "index.html", [
-    [ "TODO:", "md_readme.html", [
-      [ "Warning!", "md_readme.html#autotoc_md1", null ],
-      [ "How to code?", "md_readme.html#autotoc_md2", null ]
+    [ "Classes", "annotated.html", [
+      [ "Class List", "annotated.html", "annotated_dup" ],
+      [ "Class Index", "classes.html", null ],
+      [ "Class Members", "functions.html", [
+        [ "All", "functions.html", null ],
+        [ "Functions", "functions_func.html", null ]
+      ] ]
+    ] ],
+    [ "Files", "files.html", [
+      [ "File List", "files.html", "files_dup" ]
     ] ]
   ] ]
 ];
 
 var NAVTREEINDEX =
 [
-"index.html"
+"_buttons_8cpp.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

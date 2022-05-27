@@ -14,12 +14,16 @@
   <component name="ChangeListManager">
     <list default="true" id="c23c2c9a-714e-4c4a-a040-f9ec4090e1cd" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/Buttons.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Buttons.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/Buttons.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Buttons.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/Text.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Text.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/Text.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Text.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/navtreedata.js" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/navtreedata.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/navtreeindex0.js" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/navtreeindex0.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/pages.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/pages.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/all_0.js" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/search/all_0.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/all_1.js" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/search/all_1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/files_0.js" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/search/files_0.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/pages_0.js" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/search/pages_0.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html/search/searchdata.js" beforeDir="false" afterPath="$PROJECT_DIR$/doc/html/search/searchdata.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
     </list>
     <list id="988249e5-800e-41dc-aee4-fdacfcb8440b" name="Changes by Cael Graham" comment="" />
     <option name="SHOW_DIALOG" value="false" />
